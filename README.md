@@ -1,0 +1,1 @@
+# GanjOS_hass_core
