@@ -1,0 +1,13 @@
+{
+    "domain": "ganjos",
+    "name": "GanjOS Homegrow Edition Core",
+    "version": "1.0.0",
+    "documentation": "https://github.com/Ganjos-Grow-Automation/GanjOS_hass_core",
+    "dependencies": [],
+    "codeowners": ["@GanjOS-Grow-Automation"],
+    "requirements": [],
+    "config_flow": true,
+    "issue_tracker": "https://github.com/Ganjos-Grow-Automation/GanjOS_hass_core/issues",
+    "logo": "custom_components/GanjOS/www/logo.png",
+    "icon": "custom_components/GanjOS/www/icon.png"
+}
