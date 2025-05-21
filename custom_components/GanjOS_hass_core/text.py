@@ -43,18 +43,12 @@ async def create_text_entities(hass, context_id: str, config: dict):
 
 
 class GanjosTextEntity(TextEntity):
-    def __init__(self, context_id, parameter, config, entity_id):
-        self._attr_name = f"{context_id} {parameter}"
-        self._attr_unique_id = entity_id
-        self._context = context_id
+    def __init__(self, entry_id, area, parameter, config):
+        self._entry_id = entry_id
+        self._area = area
         self._parameter = parameter
-        self._config = config
-        self._state = config.get("initial", "")
-        self._attr_icon = config.get("icon", "mdi:text")
-        self._attr_min = config.get("min", 0)
-        self._attr_max = config.get("max", 255)
-        self._attr_mode = config.get("mode", "text")
-
+        self._value = config.get("default", "")
+        self._name = f"{area} {parameter}"
     @property
     def native_value(self):
         return self._state

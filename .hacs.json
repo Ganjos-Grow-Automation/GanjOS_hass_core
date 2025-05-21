@@ -1,8 +1,8 @@
 {
   "name": "GanjOS Core",
   "content_in_root": false,
-  "domains": ["ganjos"],
+  "domains": ["ganjos_hass_core"],
   "country": "global",
-  "homeassistant": "2025.1.0",
+  "homeassistant": "2023.1.0",
   "render_readme": true
 }
