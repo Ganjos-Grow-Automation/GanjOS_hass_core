@@ -2,7 +2,7 @@ import logging
 from homeassistant.core import HomeAssistant
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
-from homeassistant.components.switch import SwitchEntity
+from homeassistant.components.input_datetime import InputDatetime
 from .const import DOMAIN
 
 _LOGGER = logging.getLogger(__name__)
@@ -11,11 +11,11 @@ _LOGGER = logging.getLogger(__name__)
 async def async_setup_entry(
     hass: HomeAssistant, entry: ConfigEntry, async_add_entities: AddEntitiesCallback
 ):
-    """Register the add_entities callback for switch platform."""
-    hass.data.setdefault(DOMAIN, {})["switch_platform"] = async_add_entities
+    """Register the add_entities callback for datetime platform."""
+    hass.data.setdefault(DOMAIN, {})["datetime_platform"] = async_add_entities
 
 
-async def create_switch_entities(
+async def create_datetime_entities(
     hass,
     config_entry: ConfigEntry,
     device_id: str,
@@ -23,15 +23,15 @@ async def create_switch_entities(
     model: str,
     name_prefix: str = ""
 ):
-    """Create switch entities dynamically for a given device."""
+    """Create datetime entities dynamically for a given device."""
     entities = []
 
     for param_key, param_cfg in parameters.items():
-        entity_id = f"switch.{device_id}_{param_key}".lower().replace("-", "_")
+        entity_id = f"input_datetime.{device_id}_{param_key}".lower().replace("-", "_")
         display_name = f"{name_prefix} {param_key.replace('-', ' ')}".strip()
 
         entities.append(
-            GanjosSwitch(
+            GanjosDatetime(
                 name=display_name,
                 entity_id=entity_id,
                 device_id=device_id,
@@ -44,16 +44,16 @@ async def create_switch_entities(
         )
 
     if entities:
-        platform = hass.data[DOMAIN].get("switch_platform")
+        platform = hass.data[DOMAIN].get("datetime_platform")
         if platform:
             platform(entities)
-            _LOGGER.info(f"Added {len(entities)} switch entities for {device_id}")
+            _LOGGER.info(f"Added {len(entities)} datetime entities for {device_id}")
         else:
-            _LOGGER.warning("No entity registration function available for switch platform.")
+            _LOGGER.warning("No entity registration function available for datetime platform.")
 
 
-class GanjosSwitch(SwitchEntity):
-    """A dynamic switch entity used by GanjOS."""
+class GanjosDatetime(InputDatetime):
+    """A dynamic datetime entity used by GanjOS."""
 
     def __init__(
         self,
@@ -62,7 +62,7 @@ class GanjosSwitch(SwitchEntity):
         device_id,
         param_key,
         config,
-        model="GanjOS Switch",
+        model="GanjOS Datetime",
         display_device_name=None,
         config_entry: ConfigEntry = None
     ):
@@ -73,8 +73,12 @@ class GanjosSwitch(SwitchEntity):
         self._config = config
         self._model = model
         self._display_device_name = display_device_name or device_id
-        self._state = config.get("default", False)
         self._config_entry = config_entry
+
+        self._attr_has_date = config.get("is_date", True)
+        self._attr_has_time = config.get("is_time", False)
+        self._attr_native_value = None
+        self._attr_icon = config.get("icon", "mdi:calendar")
 
     @property
     def name(self):
@@ -85,24 +89,12 @@ class GanjosSwitch(SwitchEntity):
         return f"{self._config_entry.entry_id}__{self._device_id}__{self._param_key}".lower()
 
     @property
-    def is_on(self):
-        return self._state
-
-    async def async_turn_on(self, **kwargs):
-        self._state = True
-        self.async_write_ha_state()
-
-    async def async_turn_off(self, **kwargs):
-        self._state = False
-        self.async_write_ha_state()
+    def has_date(self) -> bool:
+        return self._attr_has_date
 
     @property
-    def icon(self):
-        return self._config.get("icon", "mdi:toggle-switch")
-
-    @property
-    def config_entry(self):
-        return self._config_entry
+    def has_time(self) -> bool:
+        return self._attr_has_time
 
     @property
     def device_info(self):
@@ -116,3 +108,7 @@ class GanjosSwitch(SwitchEntity):
             "entry_type": "device",
             "via_device": None
         }
+
+    @property
+    def config_entry(self):
+        return self._config_entry

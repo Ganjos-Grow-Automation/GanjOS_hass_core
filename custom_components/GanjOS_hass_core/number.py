@@ -39,7 +39,7 @@ async def create_number_entities(
                 config=param_cfg,
                 model=model,
                 display_device_name=name_prefix,
-                config_entry=config_entry  # WICHTIG: Weiterreichen
+                config_entry=config_entry
             )
         )
 
@@ -62,17 +62,17 @@ class GanjosNumber(NumberEntity):
         device_id,
         param_key,
         config,
-        model="Generic Unit",
+        model="GanjOS Number",
         display_device_name=None,
         config_entry: ConfigEntry = None
     ):
         self._name = name
         self._entity_id = entity_id
         self._device_id = device_id
-        self._display_device_name = display_device_name or device_id
         self._param_key = param_key
         self._config = config
         self._model = model
+        self._display_device_name = display_device_name or device_id
         self._state = config.get("default", 0)
         self._config_entry = config_entry
 
@@ -82,7 +82,7 @@ class GanjosNumber(NumberEntity):
 
     @property
     def unique_id(self):
-        return self._entity_id
+        return f"{self._config_entry.entry_id}__{self._device_id}__{self._param_key}".lower()
 
     @property
     def native_value(self):
@@ -125,9 +125,8 @@ class GanjosNumber(NumberEntity):
             "model": self._model,
             "sw_version": "0.1.0",
             "configuration_url": "https://ganjos.io",
-            "entry_type": "service",
-            "via_device": None,
-            "suggested_area": "Grow Room"
+            "entry_type": "device",
+            "via_device": None
         }
 
     async def async_set_native_value(self, value):
