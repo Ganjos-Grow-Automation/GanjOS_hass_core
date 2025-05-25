@@ -8,6 +8,6 @@
     "requirements": [],
     "config_flow": true,
     "issue_tracker": "https://github.com/Ganjos-Grow-Automation/GanjOS_hass_core/issues",
-    "logo": "custom_components/GanjOS_hass_core/logo.png",
-    "icon": "custom_components/GanjOS_hass_core/icon.png"
+    "logo": "custom_components/ganjos/logo.png",
+    "icon": "custom_components/ganjos/icon.png"
 }
