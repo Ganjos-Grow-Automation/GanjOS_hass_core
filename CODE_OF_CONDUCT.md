@@ -1,79 +1,73 @@
-# Code of Conduct for Contributors
+# 🤝 Code of Conduct / Verhaltenskodex
 
-## Our Commitment
+**Sprache / Language:**  
+🇩🇪 [Zur deutschen Version springen](#verhaltenskodex-deutsch)  
+🇬🇧 [Jump to English version](#code-of-conduct-english)
 
-We, as members, contributors, and leaders, pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, gender characteristics, gender identity and expression, level of experience, education, socioeconomic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
+---
 
-We commit to acting and interacting in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community.
+## 🇩🇪 Verhaltenskodex (Deutsch) {#verhaltenskodex-deutsch}
 
-## Our Standards
+### Unser Versprechen
+Wir als Mitglieder, Mitwirkende und Leiter verpflichten uns, die Teilnahme an unserer Community zu einer belästigungsfreien Erfahrung für alle zu machen, ...
 
-Examples of behavior that contributes to a positive environment for our community include:
+### Unsere Standards
+Beispiele für positives Verhalten:  
+- Empathie und Freundlichkeit zeigen  
+- Respekt gegenüber unterschiedlichen Erfahrungen  
+...
 
-* Showing empathy and kindness toward other people
-* Respecting different opinions, viewpoints, and experiences
-* Giving and gracefully accepting constructive feedback
-* Taking responsibility and apologizing to those affected by our mistakes, and learning from the experience
-* Focusing on what is best not just for us as individuals, but for the overall community
+Beispiele für inakzeptables Verhalten:  
+- Sexuelle Sprache oder Belästigung  
+- Trolling, Beleidigungen, politische Angriffe  
+...
 
-Examples of unacceptable behavior include:
+### Durchsetzung
+Community-Leiter klären Verstöße und können Maßnahmen von Warnung bis Ausschluss ergreifen. Meldungen sind vertraulich zu behandeln.
 
-* The use of sexualized language or imagery and unwelcome sexual attention or advances
-* Trolling, insulting or derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others’ private information, such as a physical or email address, without their explicit permission
-* Other conduct which could reasonably be considered inappropriate in a professional setting
+### Geltungsbereich
+Gilt in allen Community-Räumen und wenn jemand GanjOS öffentlich vertritt.
 
-## Enforcement Responsibilities
+### Durchsetzungsrichtlinien
+1. **Korrektur** – Private Warnung  
+2. **Verwarnung** – Temporäres Kommunikationsverbot  
+3. **Temporäres Verbot** – Ausschluss für definierten Zeitraum  
+4. **Permanentes Verbot** – Wiederholter oder gravierender Verstoß
 
-Community leaders are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior they deem inappropriate, threatening, offensive, or harmful.
+### Zuschreibung
+Adaptiert von [Contributor Covenant v2.0](https://www.contributor-covenant.org/version/2/0/code_of_conduct.html)  
+Mit Richtlinien nach [Mozilla Code Enforcement Ladder](https://github.com/mozilla/diversity)
 
-Community leaders have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned with this Code of Conduct, and will communicate reasons for moderation decisions when appropriate.
+---
 
-## Scope
+## 🇬🇧 Code of Conduct (English) {#code-of-conduct-english}
 
-This Code of Conduct applies within all community spaces, and also applies when an individual is officially representing the community in public spaces. Examples of representing our community include using an official e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event.
+### Our Pledge
+We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, ...
 
-## Enforcement
+### Our Standards
+Examples of positive behavior:  
+- Showing empathy and kindness  
+- Being respectful of differing viewpoints  
+...
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement via Discord. All complaints will be reviewed and investigated promptly and fairly.
+Examples of unacceptable behavior:  
+- Sexualized language or imagery  
+- Trolling, insults, or political attacks  
+...
 
-All community leaders are obligated to respect the privacy and security of the reporter of any incident.
+### Enforcement
+Community leaders are responsible for clarifying and enforcing acceptable behavior. All reports will be handled with discretion.
 
-## Enforcement Guidelines
+### Scope
+Applies to all community spaces and when representing GanjOS in public.
 
-Community leaders will follow these guidelines to determine the consequences for any action they deem in violation of this Code of Conduct:
+### Enforcement Guidelines
+1. **Correction** – Private warning  
+2. **Warning** – Temporary interaction ban  
+3. **Temporary Ban** – Defined exclusion from the community  
+4. **Permanent Ban** – Ongoing or severe misconduct
 
-### 1. Correction
-
-**Impact on the Community:** Use of inappropriate language or other behavior deemed unprofessional or unwelcome in the community.
-
-**Consequence:** A private, written warning from community leaders, providing clarity around the nature of the violation and an explanation of why the behavior was inappropriate. A public apology may be requested.
-
-### 2. Warning
-
-**Impact on the Community:** A violation through a single incident or series of actions.
-
-**Consequence:** A warning with consequences for continued behavior. No interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, for a specified period of time. This includes avoiding interactions in community spaces as well as external channels such as social media. Violating these terms may lead to a temporary or permanent ban.
-
-### 3. Temporary Ban
-
-**Impact on the Community:** A serious violation of community standards, including sustained inappropriate behavior.
-
-**Consequence:** A temporary ban from any sort of interaction or public communication with the community for a specified period of time. No public or private interaction with the involved parties, including unsolicited interaction with those enforcing the Code of Conduct, is allowed during this period. Violating these terms may lead to a permanent ban.
-
-### 4. Permanent Ban
-
-**Impact on the Community:** Demonstrating a pattern of violating community standards, including sustained inappropriate behavior, harassment of an individual, or aggression toward or disparagement of groups of individuals.
-
-**Consequence:** A permanent ban from any sort of public interaction within the community.
-
-## Attribution
-
-This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 2.0, available at <https://www.contributor-covenant.org/version/2/0/code_of_conduct.html>.
-
-The enforcement guidelines were inspired by [Mozilla’s Code of Conduct Enforcement Guide](https://github.com/mozilla/diversity).
-
-[homepage]: https://www.contributor-covenant.org
-
-Answers to frequently asked questions about this Code of Conduct can be found at <https://www.contributor-covenant.org/faq>. Translations are available at <https://www.contributor-covenant.org/translations>.
+### Attribution
+Adapted from the [Contributor Covenant v2.0](https://www.contributor-covenant.org/version/2/0/code_of_conduct.html)  
+With guidelines inspired by [Mozilla's enforcement ladder](https://github.com/mozilla/diversity)

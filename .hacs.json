@@ -1,8 +1,8 @@
 {
-  "name": "GanjOS Core",
+  "name": "GanjOS Homegrow Edition Core",
   "content_in_root": false,
-  "domains": ["ganjos_hass_core"],
+  "domains": ["ganjos"],
   "country": "global",
-  "homeassistant": "2023.1.0",
+  "homeassistant": "2023.12.0",
   "render_readme": true
 }
