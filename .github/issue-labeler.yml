@@ -1,0 +1,24 @@
+name: Issue Labeler
+
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/labeler@v5
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+bug:
+  - "bug"
+  - "unexpected behavior"
+
+enhancement:
+  - "feature"
+  - "new functionality"
+
+documentation:
+  - "docs"
+  - "readme"

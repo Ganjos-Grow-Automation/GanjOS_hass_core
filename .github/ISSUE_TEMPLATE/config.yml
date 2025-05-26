@@ -1,0 +1,26 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discord Community Support
+    url: https://discord.ganjos.io
+    about: Ask questions and get help from the GanjOS community.
+issue_templates:
+  - name: Bug Report
+    description: Report a bug or unexpected behavior.
+    labels: [bug]
+    file: bug_report.md
+  - name: Feature Request
+    description: Suggest a new feature or improvement.
+    labels: [enhancement]
+    file: feature_request.md
+  - name: Support Question
+    description: Ask a question or request help with your setup.
+    labels: [question, support]
+    file: support_question.md
+  - name: Integration Feedback
+    description: Share your experience using the GanjOS integration.
+    labels: [feedback, ux]
+    file: integration_feedback.md
+  - name: Hardware Compatibility
+    description: Report sensors or devices you've tested.
+    labels: [hardware, compatibility]
+    file: hardware_compatibility.md
