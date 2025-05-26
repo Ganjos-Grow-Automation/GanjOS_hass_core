@@ -107,8 +107,4 @@ class GanjosSensor(SensorEntity):
             "name": self._display_device_name,
             "manufacturer": "GanjOS",
             "model": self._model,
-            "sw_version": "0.1.0",
-            "configuration_url": "https://ganjos.io",
-            "entry_type": "device",
-            "via_device": None
         }
