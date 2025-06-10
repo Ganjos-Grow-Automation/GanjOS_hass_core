@@ -47,7 +47,6 @@ async def create_new_area(hass, entry: ConfigEntry, area_key: str, display_name:
     # Entity Creation (Area Level)
     await create_switch_entities(hass, entry, device_id, AREA_SETTINGS_SWITCH_PARAMETERS, "Grow Area", display_name)
     await create_number_entities(hass, entry, device_id, AREA_SETTINGS_NUMBER_PARAMETERS, "Grow Area", display_name)
-    await create_number_entities(hass, entry, device_id, AREA_SETTINGS_CLIMATE_PARAMETERS, "Grow Area", display_name)
     await create_text_entities(hass, entry, device_id, AREA_SETTINGS_TEXT_PARAMETERS, "Grow Area", display_name)
     await create_select_entities(hass, entry, device_id, AREA_SETTINGS_SELECT_PARAMETERS, "Grow Area", display_name)
     await create_binary_sensor_entities(hass, entry, device_id, AREA_BINARY_SENSOR_PARAMETERS, "Grow Area", display_name)

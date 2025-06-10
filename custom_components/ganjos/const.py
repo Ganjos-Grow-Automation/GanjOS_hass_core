@@ -134,7 +134,45 @@ PLANT_STAGE_PARAMETERS = {
 }
 
 AREA_SETTINGS_CLIMATE_PARAMETERS = {
-    "VPD-Target-Setting-Value": {
+
+}
+
+AREA_SETTINGS_NUMBER_PARAMETERS = {
+    "Sunrise-Sunset-Duration": {"default": 30, "min": 0, "max": 120, "step": 1, "unit": "min", "icon": "mdi:weather-sunset"},
+    "Leaf-Temperature-Offset": {"default": 0, "min": -10, "max": 10, "step": 0.1, "unit": "°C", "icon": "mdi:thermometer-lines"},
+    "Light-Dimm-Value": {"default": 100, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:brightness-6"},
+    "Light-Current-Min-Dimm": {"default": 30, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:brightness-4"},
+    "Light-Current-Max-Dimm": {"default": 100, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:brightness-7"},
+    "Light-Vegetative-Min-Dimm": {"default": 40, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:leaf"},
+    "Light-Vegetative-Max-Dimm": {"default": 90, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:leaf"},
+    "Light-Bloom-Min-Dimm": {"default": 50, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:flower"},
+    "Light-Bloom-Max-Dimm": {"default": 100, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:flower"},
+    "Exhaust-Dimm-Value": {"default": 80, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:fan-speed-3"},
+    "Exhaust-Dehumidifier-Dimm-Value": {"default": 60, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:fan-minus"},
+    "Exhaust-Min-Dimm": {"default": 30, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:fan"},
+    "Exhaust-Max-Dimm": {"default": 100, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:fan"},
+    "Exhaust-Interval-Power": {"default": 5, "min": 0, "max": 3600, "step": 5, "unit": "s", "icon": "mdi:timer-sand"},
+    "Ventilation-Dimm-Value": {"default": 70, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:air-filter"},
+    "Ventilation-Min-Dimm": {"default": 40, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:air-filter"},
+    "Ventilation-Max-Dimm": {"default": 90, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:air-filter"},
+    "Ventilation-Interval-Power": {"default": 5, "min": 0, "max": 3600, "step": 5, "unit": "s", "icon": "mdi:timer-sand"},
+    "Heater-Dimm-Value": {"default": 60, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:radiator"},
+    "Heater-Min-Dimm": {"default": 30, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:radiator"},
+    "Heater-Max-Dimm": {"default": 100, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:radiator"},
+    "Heater-Interval-Power": {"default": 10, "min": 0, "max": 3600, "step": 5, "unit": "s", "icon": "mdi:timer-sand"},
+    "Humidifier-Dimm-Value": {"default": 50, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:water-plus"},
+    "Humidifier-Min-Dimm": {"default": 20, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:water-plus"},
+    "Humidifier-Max-Dimm": {"default": 80, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:water-plus"},
+    "Humidifier-Interval-Power": {"default": 10, "min": 0, "max": 3600, "step": 5, "unit": "s", "icon": "mdi:timer-sand"},
+    "Dehumidifier-Dimm-Value": {"default": 55, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:water-off"},
+    "Dehumidifier-Min-Dimm": {"default": 25, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:water-off"},
+    "Dehumidifier-Max-Dimm": {"default": 90, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:water-off"},
+    "Dehumidifier-Interval-Power": {"default": 15, "min": 0, "max": 3600, "step": 5, "unit": "s", "icon": "mdi:timer-sand"},
+    "Ac-Dimm-Value": {"default": 65, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:air-conditioner"},
+    "Ac-Min-Dimm": {"default": 30, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:air-conditioner"},
+    "Ac-Max-Dimm": {"default": 95, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:air-conditioner"},
+    "Ac-Interval-Power": {"default": 10, "min": 0, "max": 3600, "step": 5, "unit": "s", "icon": "mdi:timer-sand"},
+        "VPD-Target-Setting-Value": {
         "default": 1.2, "min": 0.5, "max": 2.0, "step": 0.1, "unit": "kPa",
         "icon": "mdi:water-percent"
     },
@@ -254,43 +292,6 @@ AREA_SETTINGS_CLIMATE_PARAMETERS = {
         "default": 1000, "min": 50, "max": 2000, "step": 50, "unit": "ppfd",
         "icon": "mdi:lightbulb-on-outline"
     }
-}
-
-AREA_SETTINGS_NUMBER_PARAMETERS = {
-    "Sunrise-Sunset-Duration": {"default": 30, "min": 0, "max": 120, "step": 1, "unit": "min", "icon": "mdi:weather-sunset"},
-    "Leaf-Temperature-Offset": {"default": 0, "min": -10, "max": 10, "step": 0.1, "unit": "°C", "icon": "mdi:thermometer-lines"},
-    "Light-Dimm-Value": {"default": 100, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:brightness-6"},
-    "Light-Current-Min-Dimm": {"default": 30, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:brightness-4"},
-    "Light-Current-Max-Dimm": {"default": 100, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:brightness-7"},
-    "Light-Vegetative-Min-Dimm": {"default": 40, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:leaf"},
-    "Light-Vegetative-Max-Dimm": {"default": 90, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:leaf"},
-    "Light-Bloom-Min-Dimm": {"default": 50, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:flower"},
-    "Light-Bloom-Max-Dimm": {"default": 100, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:flower"},
-    "Exhaust-Dimm-Value": {"default": 80, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:fan-speed-3"},
-    "Exhaust-Dehumidifier-Dimm-Value": {"default": 60, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:fan-minus"},
-    "Exhaust-Min-Dimm": {"default": 30, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:fan"},
-    "Exhaust-Max-Dimm": {"default": 100, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:fan"},
-    "Exhaust-Interval-Power": {"default": 5, "min": 0, "max": 3600, "step": 5, "unit": "s", "icon": "mdi:timer-sand"},
-    "Ventilation-Dimm-Value": {"default": 70, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:air-filter"},
-    "Ventilation-Min-Dimm": {"default": 40, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:air-filter"},
-    "Ventilation-Max-Dimm": {"default": 90, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:air-filter"},
-    "Ventilation-Interval-Power": {"default": 5, "min": 0, "max": 3600, "step": 5, "unit": "s", "icon": "mdi:timer-sand"},
-    "Heater-Dimm-Value": {"default": 60, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:radiator"},
-    "Heater-Min-Dimm": {"default": 30, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:radiator"},
-    "Heater-Max-Dimm": {"default": 100, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:radiator"},
-    "Heater-Interval-Power": {"default": 10, "min": 0, "max": 3600, "step": 5, "unit": "s", "icon": "mdi:timer-sand"},
-    "Humidifier-Dimm-Value": {"default": 50, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:water-plus"},
-    "Humidifier-Min-Dimm": {"default": 20, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:water-plus"},
-    "Humidifier-Max-Dimm": {"default": 80, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:water-plus"},
-    "Humidifier-Interval-Power": {"default": 10, "min": 0, "max": 3600, "step": 5, "unit": "s", "icon": "mdi:timer-sand"},
-    "Dehumidifier-Dimm-Value": {"default": 55, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:water-off"},
-    "Dehumidifier-Min-Dimm": {"default": 25, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:water-off"},
-    "Dehumidifier-Max-Dimm": {"default": 90, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:water-off"},
-    "Dehumidifier-Interval-Power": {"default": 15, "min": 0, "max": 3600, "step": 5, "unit": "s", "icon": "mdi:timer-sand"},
-    "Ac-Dimm-Value": {"default": 65, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:air-conditioner"},
-    "Ac-Min-Dimm": {"default": 30, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:air-conditioner"},
-    "Ac-Max-Dimm": {"default": 95, "min": 0, "max": 100, "step": 1, "unit": "%", "icon": "mdi:air-conditioner"},
-    "Ac-Interval-Power": {"default": 10, "min": 0, "max": 3600, "step": 5, "unit": "s", "icon": "mdi:timer-sand"}
 }
 
 AREA_SETTINGS_SWITCH_PARAMETERS = {
