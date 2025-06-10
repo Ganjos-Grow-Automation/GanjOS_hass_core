@@ -133,10 +133,6 @@ PLANT_STAGE_PARAMETERS = {
     }
 }
 
-AREA_SETTINGS_CLIMATE_PARAMETERS = {
-
-}
-
 AREA_SETTINGS_NUMBER_PARAMETERS = {
     "Sunrise-Sunset-Duration": {"default": 30, "min": 0, "max": 120, "step": 1, "unit": "min", "icon": "mdi:weather-sunset"},
     "Leaf-Temperature-Offset": {"default": 0, "min": -10, "max": 10, "step": 0.1, "unit": "°C", "icon": "mdi:thermometer-lines"},
