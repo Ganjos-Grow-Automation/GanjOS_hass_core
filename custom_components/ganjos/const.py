@@ -134,123 +134,123 @@ PLANT_STAGE_PARAMETERS = {
 }
 
 AREA_SETTINGS_CLIMATE_PARAMETERS = {
-    "VPD-Target-Value": {
+    "VPD-Target-Setting-Value": {
         "default": 1.2, "min": 0.5, "max": 2.0, "step": 0.1, "unit": "kPa",
         "icon": "mdi:water-percent"
     },
-    "VPD-Target-Tolerance-Value": {
+    "VPD-Target-Tolerance-Setting-Value": {
         "default": 0.1, "min": 0.0, "max": 0.5, "step": 0.01, "unit": "kPa",
         "icon": "mdi:water-off"
     },
-    "VPD-Tolerance-Value": {
+    "VPD-Tolerance-Setting-Value": {
         "default": 0.2, "min": 0.0, "max": 1.0, "step": 0.05, "unit": "kPa",
         "icon": "mdi:water-alert"
     },
-    "VPD-Notification-Difference-Value": {
+    "VPD-Notification-Difference-Setting-Value": {
         "default": 0.3, "min": 0.0, "max": 1.0, "step": 0.05, "unit": "kPa",
         "icon": "mdi:bell-alert-outline"
     },
-    "VPD-Day-Night-Difference-Value": {
+    "VPD-Day-Night-Difference-Setting-Value": {
         "default": 0.5, "min": 0.0, "max": 1.5, "step": 0.1, "unit": "kPa",
         "icon": "mdi:weather-night"
     },
-    "Temperature-Air-Target-Value": {
+    "Temperature-Air-Target-Setting-Value": {
         "default": 25, "min": 15, "max": 35, "step": 0.5, "unit": "°C",
         "icon": "mdi:thermometer"
     },
-    "Temperature-Air-Target-Tolerance-Value": {
+    "Temperature-Air-Target-Tolerance-Setting-Value": {
         "default": 1, "min": 0, "max": 5, "step": 0.1, "unit": "°C",
         "icon": "mdi:thermometer-check"
     },
-    "Temperature-Air-Tolerance-Value": {
+    "Temperature-Air-Tolerance-Setting-Value": {
         "default": 2, "min": 0, "max": 5, "step": 0.5, "unit": "°C",
         "icon": "mdi:thermometer-lines"
     },
-    "Temperature-Air-Notification-Difference-Value": {
+    "Temperature-Air-Notification-Difference-Setting-Value": {
         "default": 3, "min": 0, "max": 5, "step": 0.5, "unit": "°C",
         "icon": "mdi:bell-alert"
     },
-    "Temperature-Air-Day-Night-Difference-Value": {
+    "Temperature-Air-Day-Night-Difference-Setting-Value": {
         "default": 5, "min": 0, "max": 10, "step": 0.5, "unit": "°C",
         "icon": "mdi:weather-night"
     },
-    "Humidity-Target-Value": {
+    "Humidity-Target-Setting-Value": {
         "default": 60, "min": 30, "max": 90, "step": 1, "unit": "%",
         "icon": "mdi:water-percent"
     },
-    "Humidity-Target-Tolerance-Value": {
+    "Humidity-Target-Tolerance-Setting-Value": {
         "default": 5, "min": 0, "max": 20, "step": 1, "unit": "%",
         "icon": "mdi:water-alert"
     },
-    "Humidity-Tolerance-Value": {
+    "Humidity-Tolerance-Setting-Value": {
         "default": 10, "min": 0, "max": 20, "step": 1, "unit": "%",
         "icon": "mdi:water-off"
     },
-    "Humidity-Notification-Difference-Value": {
+    "Humidity-Notification-Difference-Setting-Value": {
         "default": 15, "min": 0, "max": 30, "step": 1, "unit": "%",
         "icon": "mdi:bell-alert"
     },
-    "Humidity-Day-Night-Difference-Value": {
+    "Humidity-Day-Night-Difference-Setting-Value": {
         "default": 20, "min": 0, "max": 40, "step": 1, "unit": "%",
         "icon": "mdi:weather-night"
     },
-    "CO2-Target-Value": {
+    "CO2-Target-Setting-Value": {
         "default": 400, "min": 300, "max": 2000, "step": 10, "unit": "ppm",
         "icon": "mdi:molecule-co2"
     },
-    "CO2-Target-Tolerance-Value": {
+    "CO2-Target-Tolerance-Setting-Value": {
         "default": 50, "min": 0, "max": 200, "step": 10, "unit": "ppm",
         "icon": "mdi:molecule-co2"
     },
-    "CO2-Tolerance-Value": {
+    "CO2-Tolerance-Setting-Value": {
         "default": 100, "min": 0, "max": 200, "step": 10, "unit": "ppm",
         "icon": "mdi:chart-bell-curve"
     },
-    "CO2-Notification-Difference-Value": {
+    "CO2-Notification-Difference-Setting-Value": {
         "default": 200, "min": 0, "max": 400, "step": 10, "unit": "ppm",
         "icon": "mdi:bell-alert-outline"
     },
-    "CO2-Day-Night-Difference-Value": {
+    "CO2-Day-Night-Difference-Setting-Value": {
         "default": 300, "min": 0, "max": 600, "step": 10, "unit": "ppm",
         "icon": "mdi:weather-night"
     },
-    "Soil-Moisture-Target-Value": {
+    "Soil-Moisture-Target-Setting-Value": {
         "default": 50, "min": 10, "max": 100, "step": 1, "unit": "%",
         "icon": "mdi:cup-water"
     },
-    "Soil-Moisture-Target-Tolerance-Value": {
+    "Soil-Moisture-Target-Tolerance-Setting-Value": {
         "default": 5, "min": 0, "max": 10, "step": 1, "unit": "%",
         "icon": "mdi:water-off"
     },
-    "Soil-Moisture-Tolerance-Value": {
+    "Soil-Moisture-Tolerance-Setting-Value": {
         "default": 10, "min": 0, "max": 20, "step": 1, "unit": "%",
         "icon": "mdi:water-alert"
     },
-    "Soil-Moisture-Notification-Difference-Value": {
+    "Soil-Moisture-Notification-Difference-Setting-Value": {
         "default": 15, "min": 0, "max": 30, "step": 1, "unit": "%",
         "icon": "mdi:bell-alert"
     },
-    "Soil-Temperature-Target-Value": {
+    "Soil-Temperature-Target-Setting-Value": {
         "default": 20, "min": 10, "max": 30, "step": 0.5, "unit": "°C",
         "icon": "mdi:thermometer"
     },
-    "Soil-Temperature-Target-Tolerance-Value": {
+    "Soil-Temperature-Target-Tolerance-Setting-Value": {
         "default": 2, "min": 0, "max": 5, "step": 0.5, "unit": "°C",
         "icon": "mdi:thermometer-alert"
     },
-    "Soil-Temperature-Tolerance-Value": {
+    "Soil-Temperature-Tolerance-Setting-Value": {
         "default": 3, "min": 0, "max": 5, "step": 0.5, "unit": "°C",
         "icon": "mdi:thermometer-lines"
     },
-    "Soil-Temperature-Notification-Difference-Value": {
+    "Soil-Temperature-Notification-Difference-Setting-Value": {
         "default": 5, "min": 0, "max": 10, "step": 0.5, "unit": "°C",
         "icon": "mdi:bell-alert-outline"
     },
-    "Light-Hours-Target-Value": {
+    "Light-Hours-Target-Setting-Value": {
         "default": 16, "min": 0, "max": 24, "step": 1, "unit": "hours",
         "icon": "mdi:weather-sunny"
     },
-    "Light-Intensity-Target-Value": {
+    "Light-Intensity-Target-Setting-Value": {
         "default": 1000, "min": 50, "max": 2000, "step": 50, "unit": "ppfd",
         "icon": "mdi:lightbulb-on-outline"
     }
@@ -293,7 +293,6 @@ AREA_SETTINGS_NUMBER_PARAMETERS = {
     "Ac-Interval-Power": {"default": 10, "min": 0, "max": 3600, "step": 5, "unit": "s", "icon": "mdi:timer-sand"}
 }
 
-
 AREA_SETTINGS_SWITCH_PARAMETERS = {
     "Area-Is-Active": {"icon": "mdi:checkbox-marked-circle-outline", "default": False},
     "Light-Available": {"icon": "mdi:lightbulb", "default": False},
@@ -313,7 +312,6 @@ AREA_SETTINGS_SWITCH_PARAMETERS = {
     "Ac-Available": {"icon": "mdi:snowflake", "default": False},
     "Ac-Dimmable": {"icon": "mdi:air-conditioner", "default": False}
 }
-
 
 AREA_SETTINGS_SELECT_PARAMETERS = {
     "Light-Schedule-Mode": {
@@ -366,7 +364,6 @@ AREA_SETTINGS_TEXT_PARAMETERS = {
     }
 }
 
-
 AREA_SENSOR_PARAMETERS = {
     "Light-General-Power-Percentage": {"icon": "mdi:lightbulb-on", "unit": "%"},
     "Light-Hours": {"icon": "mdi:clock-outline", "unit": "h"},
@@ -383,7 +380,6 @@ AREA_SENSOR_PARAMETERS = {
     "Inside-General-Temperature-Leaf": {"icon": "mdi:leaf", "unit": "°C"},
     "Inside-General-Humidity": {"icon": "mdi:water-percent", "unit": "%"},
     "Inside-General-Co2": {"icon": "mdi:molecule-co2", "unit": "ppm"},
-
     "Vpd-Min-Notification-Value": {"icon": "mdi:bell-alert-outline", "unit": "kPa"},
     "Vpd-Min-Value": {"icon": "mdi:arrow-down", "unit": "kPa"},
     "Vpd-Target-Min-Value": {"icon": "mdi:target", "unit": "kPa"},
@@ -391,7 +387,6 @@ AREA_SENSOR_PARAMETERS = {
     "Vpd-Target-Max-Value": {"icon": "mdi:target", "unit": "kPa"},
     "Vpd-Max-Value": {"icon": "mdi:arrow-up", "unit": "kPa"},
     "Vpd-Max-Notification-Value": {"icon": "mdi:bell-alert-outline", "unit": "kPa"},
-
     "Temperature-Air-Min-Notification-Value": {"icon": "mdi:bell-alert-outline", "unit": "°C"},
     "Temperature-Air-Min-Value": {"icon": "mdi:arrow-down", "unit": "°C"},
     "Temperature-Air-Target-Min-Value": {"icon": "mdi:target", "unit": "°C"},
@@ -399,7 +394,6 @@ AREA_SENSOR_PARAMETERS = {
     "Temperature-Air-Target-Max-Value": {"icon": "mdi:target", "unit": "°C"},
     "Temperature-Air-Max-Value": {"icon": "mdi:arrow-up", "unit": "°C"},
     "Temperature-Air-Max-Notification-Value": {"icon": "mdi:bell-alert-outline", "unit": "°C"},
-
     "Humidity-Min-Notification-Value": {"icon": "mdi:bell-alert-outline", "unit": "%"},
     "Humidity-Min-Value": {"icon": "mdi:arrow-down", "unit": "%"},
     "Humidity-Target-Min-Value": {"icon": "mdi:target", "unit": "%"},
@@ -407,7 +401,6 @@ AREA_SENSOR_PARAMETERS = {
     "Humidity-Target-Max-Value": {"icon": "mdi:target", "unit": "%"},
     "Humidity-Max-Value": {"icon": "mdi:arrow-up", "unit": "%"},
     "Humidity-Max-Notification-Value": {"icon": "mdi:bell-alert-outline", "unit": "%"},    
-
     "Co2-Min-Notification-Value": {"icon": "mdi:bell-alert-outline", "unit": "ppm"},
     "Co2-Min-Value": {"icon": "mdi:arrow-down", "unit": "ppm"},
     "Co2-Target-Min-Value": {"icon": "mdi:target", "unit": "ppm"},
@@ -415,7 +408,6 @@ AREA_SENSOR_PARAMETERS = {
     "Co2-Target-Max-Value": {"icon": "mdi:target", "unit": "ppm"},
     "Co2-Max-Value": {"icon": "mdi:arrow-up", "unit": "ppm"},
     "Co2-Max-Notification-Value": {"icon": "mdi:bell-alert-outline", "unit": "ppm"},
-
     "Soil-Moisture-Min-Notification-Value": {"icon": "mdi:bell-alert-outline", "unit": "%"},
     "Soil-Moisture-Min-Value": {"icon": "mdi:arrow-down", "unit": "%"},
     "Soil-Moisture-Target-Min-Value": {"icon": "mdi:target", "unit": "%"},
@@ -423,27 +415,21 @@ AREA_SENSOR_PARAMETERS = {
     "Soil-Moisture-Target-Max-Value": {"icon": "mdi:target", "unit": "%"},
     "Soil-Moisture-Max-Value": {"icon": "mdi:arrow-up", "unit": "%"},
     "Soil-Moisture-Max-Notification-Value": {"icon": "mdi:bell-alert-outline", "unit": "%"},
-
     "Vpd-Average-Short-Term": {"icon": "mdi:chart-timeline-variant", "unit": "kPa"},
     "Vpd-Average-Mid-Term": {"icon": "mdi:chart-timeline-variant-shimmer", "unit": "kPa"},
     "Vpd-Average-Long-Term": {"icon": "mdi:chart-timeline", "unit": "kPa"},
-
     "Temperature-Air-Average-Short-Term": {"icon": "mdi:thermometer", "unit": "°C"},
     "Temperature-Air-Average-Mid-Term": {"icon": "mdi:thermometer", "unit": "°C"},
     "Temperature-Air-Average-Long-Term": {"icon": "mdi:thermometer", "unit": "°C"},
-
     "Humidity-Average-Short-Term": {"icon": "mdi:water-percent", "unit": "%"},
     "Humidity-Average-Mid-Term": {"icon": "mdi:water-percent", "unit": "%"},
     "Humidity-Average-Long-Term": {"icon": "mdi:water-percent", "unit": "%"},
-
     "Co2-Average-Short-Term": {"icon": "mdi:molecule-co2", "unit": "ppm"},
     "Co2-Average-Mid-Term": {"icon": "mdi:molecule-co2", "unit": "ppm"},
     "Co2-Average-Long-Term": {"icon": "mdi:molecule-co2", "unit": "ppm"},
-
     "Soil-Moisture-Average-Short-Term": {"icon": "mdi:water", "unit": "%"},
     "Soil-Moisture-Average-Mid-Term": {"icon": "mdi:water", "unit": "%"},
     "Soil-Moisture-Average-Long-Term": {"icon": "mdi:water", "unit": "%"},
-
     "Data-Climate-Control": {"icon": "mdi:database"},
     "Data-Light-Control": {"icon": "mdi:database"},
     "Data-Vpd": {"icon": "mdi:database"},
@@ -452,7 +438,6 @@ AREA_SENSOR_PARAMETERS = {
     "Data-Humidity": {"icon": "mdi:database"},
     "Data-Co2": {"icon": "mdi:database"},
     "Data-Soil-Moisture": {"icon": "mdi:database"},
-
     "State-Light": {"icon": "mdi:lightbulb"},
     "State-Exhaust": {"icon": "mdi:fan"},
     "State-Ventilation": {"icon": "mdi:air-filter"},
@@ -461,7 +446,6 @@ AREA_SENSOR_PARAMETERS = {
     "State-Dehumidifier": {"icon": "mdi:water-off"},
     "State-Ac": {"icon": "mdi:air-conditioner"}
 }
-
 
 AREA_BINARY_SENSOR_PARAMETERS = {
     "Area-Is-Day": {
