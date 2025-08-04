@@ -172,7 +172,10 @@ AREA_SETTINGS_NUMBER_PARAMETERS = {
     "Co2-Average-Long-Term": {"unit": "ppm","icon": "mdi:molecule-co2","min": 200,"max": 2000,"step": 10,"default": 800},
     "Soil-Moisture-Average-Short-Term": {"unit": "%","icon": "mdi:water","min": 0,"max": 100,"step": 1,"default": 30},
     "Soil-Moisture-Average-Mid-Term": {"unit": "%","icon": "mdi:water","min": 0,"max": 100,"step": 1,"default": 30},
-    "Soil-Moisture-Average-Long-Term": {"unit": "%","icon": "mdi:water","min": 0,"max": 100,"step": 1,"default": 30}
+    "Soil-Moisture-Average-Long-Term": {"unit": "%","icon": "mdi:water","min": 0,"max": 100,"step": 1,"default": 30},
+    "Soil-Temperature-Average-Short-Term": {"unit": "%","icon": "mdi:thermometer","min": 0,"max": 100,"step": 1,"default": 30},
+    "Soil-Temperature-Average-Mid-Term": {"unit": "%","icon": "mdi:thermometer","min": 0,"max": 100,"step": 1,"default": 30},
+    "Soil-Temperature-Average-Long-Term": {"unit": "%","icon": "mdi:thermometer","min": 0,"max": 100,"step": 1,"default": 30}
 }
 
 AREA_SETTINGS_SWITCH_PARAMETERS = {
@@ -201,6 +204,7 @@ AREA_SETTINGS_SWITCH_PARAMETERS = {
     "State-Dehumidifier": {"icon": "mdi:water-off","default": False},
     "State-Ac": {"icon": "mdi:air-conditioner","default": False},
     "Area-Is-Day": {"icon": "mdi:weather-sunny","default": False},
+    "Area-Inside-Outside-Comparision": {"icon": "mdi:weather-sunny","default": False},
     "Debugging-Climate-Control-Data": {"icon": "mdi:bug-outline","default": False},
     "Debugging-Climate-Control-Trends": {"icon": "mdi:chart-line","default": False},
     "Debugging-Climate-Control-States": {"icon": "mdi:state-machine","default": False},
