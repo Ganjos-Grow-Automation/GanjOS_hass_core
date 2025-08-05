@@ -7,15 +7,10 @@ from .const import (
     AREA_SETTINGS_NUMBER_PARAMETERS,
     AREA_SETTINGS_TEXT_PARAMETERS,
     AREA_SETTINGS_SELECT_PARAMETERS,
-    AREA_BINARY_SENSOR_PARAMETERS,
-    AREA_SENSOR_PARAMETERS,
-    AREA_DATE_PARAMETERS,
     PLANT_STAGE_PARAMETERS
 )
 from .number import create_number_entities
-from .sensor import create_sensor_entities
 from .switch import create_switch_entities
-from .binary_sensor import create_binary_sensor_entities
 from .select import create_select_entities
 from .text import create_text_entities
 from .datetime import create_datetime_entities
@@ -48,8 +43,8 @@ async def create_new_area(hass, entry: ConfigEntry, area_key: str, display_name:
     await create_number_entities(hass, entry, device_id, AREA_SETTINGS_NUMBER_PARAMETERS, "Grow Area", display_name)
     await create_text_entities(hass, entry, device_id, AREA_SETTINGS_TEXT_PARAMETERS, "Grow Area", display_name)
     await create_select_entities(hass, entry, device_id, AREA_SETTINGS_SELECT_PARAMETERS, "Grow Area", display_name)
-    await create_binary_sensor_entities(hass, entry, device_id, AREA_BINARY_SENSOR_PARAMETERS, "Grow Area", display_name)
-    await create_sensor_entities(hass, entry, device_id, AREA_SENSOR_PARAMETERS, "Grow Area", display_name)
+    #await create_binary_sensor_entities(hass, entry, device_id, AREA_BINARY_SENSOR_PARAMETERS, "Grow Area", display_name)
+    #await create_sensor_entities(hass, entry, device_id, AREA_SENSOR_PARAMETERS, "Grow Area", display_name)
     #await create_datetime_entities(hass, entry, device_id, AREA_DATE_PARAMETERS, "Grow Area", display_name)
 
     return device_id
