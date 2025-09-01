@@ -186,7 +186,7 @@ AREA_SETTINGS_SWITCH_PARAMETERS = {
     "Light-Dimmable": {"icon": "mdi:brightness-6", "default": False},
     "Exhaust-Available": {"icon": "mdi:fan", "default": False},
     "Exhaust-Dimmable": {"icon": "mdi:fan-speed-3", "default": False},
-    "Exhaust-Equals-Dehumidifer": {"icon": "mdi:fan-minus", "default": False},
+    "Exhaust-Equals-Dehumidifier": {"icon": "mdi:fan-minus", "default": False},
     "Exhaust-Equals-Ac": {"icon": "mdi:fan-plus", "default": False},
     "Ventilation-Available": {"icon": "mdi:air-filter", "default": False},
     "Ventilation-Dimmable": {"icon": "mdi:air-purifier", "default": False},
