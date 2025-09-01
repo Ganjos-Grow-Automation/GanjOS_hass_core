@@ -1,13 +1,21 @@
+from importlib.util import find_spec
+
 DOMAIN = "ganjos"
 
-PLATFORMS = [
+_BASE_PLATFORMS = [
     "number",
-    "sensor",
     "switch",
-    "binary_sensor",
     "select",
     "text",
-    "datetime"
+    "datetime",
+]
+
+_OPTIONAL_PLATFORMS = ["sensor", "binary_sensor"]
+
+PLATFORMS = _BASE_PLATFORMS + [
+    platform
+    for platform in _OPTIONAL_PLATFORMS
+    if find_spec(f"custom_components.ganjos.{platform}")
 ]
 
 PLANT_STAGE_PARAMETERS = {
